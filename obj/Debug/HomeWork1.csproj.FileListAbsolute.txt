@@ -1,0 +1,6 @@
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe.config
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\obj\Debug\HomeWork1.csprojResolveAssemblyReference.cache
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\bin\Debug\HomeWork1.pdb
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\obj\Debug\HomeWork1.exe
+C:\Users\Work Laptop\Source\Repos\HomeWork1\HomeWork1\HomeWork1\obj\Debug\HomeWork1.pdb
