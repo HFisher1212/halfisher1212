@@ -4,10 +4,12 @@
 * SECTION:			Mon 5:30pm
 * HOMEWORK #:		1
 * PROJECT #:		2
+* DATE CREATED:     08.26.2016
 * LAST MODIFIED:	08.29.2016
+* MOD AUTHOR:       HAL FISHER
 ***********************************************************************/
 /**********************************************************************
-* PSEUDOCODE
+* PSUEDOCODE
 * 0.  START
 * 1.  WRITELINE text image
 * 2.  NEXTLINE pause display
