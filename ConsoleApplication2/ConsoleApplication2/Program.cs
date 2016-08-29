@@ -34,7 +34,12 @@ namespace ConsoleApplication2
         // MAIN METHOD
         static void Main(string[] args)
         {
-            Console.WriteLine("       #####   \n    A| --  / |A\n    V|  0  0 |V\n     |    >  |\n      |  -- |\n         -- ");
+            Console.WriteLine("       #####   ");
+            Console.WriteLine("    A| --  / |A");
+            Console.WriteLine("    V|  0  0 |V");
+            Console.WriteLine("     |    >  |");
+            Console.WriteLine("      |  -- |");
+            Console.WriteLine("         -- ");
             Console.ReadLine();
         }
     }
