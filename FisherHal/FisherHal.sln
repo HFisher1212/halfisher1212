@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FisherHal", "FisherHal\FisherHal.csproj", "{188DA7A4-A65D-44A8-85D9-09EC6CB1F61A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2Lab1", "HW2Lab1\HW2Lab1.csproj", "{A031CA56-4C3C-4F03-A485-8FFD5EE1E000}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{188DA7A4-A65D-44A8-85D9-09EC6CB1F61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{188DA7A4-A65D-44A8-85D9-09EC6CB1F61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{188DA7A4-A65D-44A8-85D9-09EC6CB1F61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A031CA56-4C3C-4F03-A485-8FFD5EE1E000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A031CA56-4C3C-4F03-A485-8FFD5EE1E000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A031CA56-4C3C-4F03-A485-8FFD5EE1E000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A031CA56-4C3C-4F03-A485-8FFD5EE1E000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
