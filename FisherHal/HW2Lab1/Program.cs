@@ -51,11 +51,21 @@ namespace HW2Lab1
 
             // print a message along with the sum of the two numbers
             Console.WriteLine("The sum of those three numbers is");
-            Console.WriteLine(sum);
+            Console.WriteLine(Method(n1, n2, n3));
 
             //Just to pause the screen.
             Console.ReadLine();
 
         }
+        static double Method(double n, double m, double o)
+        {
+            return n + m + o;
+        }
+
+        static int Method(int n, int m, int o)
+        {
+            return n + m + o;
+        }
+
     }
 }
