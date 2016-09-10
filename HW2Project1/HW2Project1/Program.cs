@@ -42,7 +42,7 @@ namespace HW2Project1
 
             // declare three integer variables
             int n1, n2, n3;
-            int avg;
+            double avg;
 
             string userInput;
             userInput = Console.ReadLine();
