@@ -38,11 +38,11 @@ namespace HW2Project1
             // print a message to the screen
             Console.WriteLine("Hello out there.");
             Console.WriteLine("I will average three numbers for you.");
-            Console.Write("Enter one number and press enter, then enter second number, press enter, then enter third number: ");
+            Console.WriteLine("Enter one number and press enter, then enter second number, press enter, then enter third number:");
 
             // declare three integer variables
             int n1, n2, n3;
-            double avg;
+            int avg;
 
             string userInput;
             userInput = Console.ReadLine();
