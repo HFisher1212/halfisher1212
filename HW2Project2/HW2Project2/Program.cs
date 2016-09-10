@@ -30,7 +30,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW2Project12
+namespace HW2Project2
 {
     class Program
     {
