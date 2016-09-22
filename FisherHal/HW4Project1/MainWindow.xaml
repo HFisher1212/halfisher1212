@@ -20,7 +20,7 @@
                 <GradientStop Color="#FF63D9C1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="236,87.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF9F9F9" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="16" Grid.ColumnSpan="2" BorderThickness="3" BorderBrush="#FF687AB0">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="236,85.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF9F9F9" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="16" Grid.ColumnSpan="2" BorderThickness="3" BorderBrush="#FF687AB0">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
