@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HW4Project1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid Margin="0,3,3.4,-39.2">
+    <Grid Margin="0,0,0.4,0.8">
         <Grid.Effect>
             <DropShadowEffect ShadowDepth="8"/>
         </Grid.Effect>
@@ -20,27 +20,19 @@
                 <GradientStop Color="#FF63D9C1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="236,85.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF9F9F9" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="16" Grid.ColumnSpan="2" BorderThickness="3" BorderBrush="#FF687AB0">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
-        <Label x:Name="label" Content="Weight" HorizontalAlignment="Left" Height="68" Margin="73,64,0,0" VerticalAlignment="Top" Width="143" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.498,0.373" Foreground="#FFD4E2D6">
+        <TextBox x:Name="WeightTextBox" HorizontalAlignment="Left" Height="35" Margin="236,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="White" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="24" Grid.ColumnSpan="2" BorderThickness="3" BorderBrush="#FF465580"/>
+        <Label x:Name="label" Content="Weight" HorizontalAlignment="Left" Height="68" Margin="73,54,0,0" VerticalAlignment="Top" Width="143" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.498,0.373" Foreground="#FFD4E2D6">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="label_Copy" Content="Height" HorizontalAlignment="Left" Height="69" Margin="73,122,0,0" VerticalAlignment="Top" Width="143" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.5,0.5" Foreground="#FFD4E2D6" BorderThickness="0">
+        <Label x:Name="label_Copy" Content="Height" HorizontalAlignment="Left" Height="69" Margin="73,111,0,0" VerticalAlignment="Top" Width="143" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.5,0.5" Foreground="#FFD4E2D6" BorderThickness="0">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="35" Margin="236,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF9F9F9" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="16" RenderTransformOrigin="0.515,3.823" Grid.ColumnSpan="2" BorderBrush="#FF687AB0" BorderThickness="3">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
-        <Button x:Name="button" Content="Calculate BMI" HorizontalAlignment="Left" Margin="107,200,0,0" VerticalAlignment="Top" Width="274" Grid.ColumnSpan="2" Height="42" Background="#FF86C8CA" RenderTransformOrigin="0.5,0.5" BorderThickness="3" FontFamily="Segoe Print" FontSize="18" Foreground="#FF561919" BorderBrush="#FF9BD7D4" Click="button_Click" ClickMode="Press">
+        <TextBox x:Name="HeightTextBox" HorizontalAlignment="Left" Height="35" Margin="236,134.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF9F9F9" VerticalContentAlignment="Center" UseLayoutRounding="False" TextAlignment="Center" FontSize="24" RenderTransformOrigin="0.515,3.823" Grid.ColumnSpan="2" BorderBrush="#FF465580" BorderThickness="3"/>
+        <Button x:Name="button" Content="Press to Calculate BMI" HorizontalAlignment="Left" Margin="109,185,0,0" VerticalAlignment="Top" Width="274" Grid.ColumnSpan="2" Height="42" Background="#FF86C8CA" RenderTransformOrigin="0.5,0.5" BorderThickness="3" FontFamily="Segoe Print" FontSize="18" Foreground="#FF561919" BorderBrush="#FF9BD7D4" Click="button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -53,32 +45,42 @@
                 <DropShadowEffect ShadowDepth="8"/>
             </Button.Effect>
         </Button>
-        <Canvas HorizontalAlignment="Left" Height="62" Margin="0.4,270,0,0" VerticalAlignment="Top" Width="189" Grid.Column="1" IsEnabled="False"/>
-        <Label x:Name="label1" Grid.ColumnSpan="2" Content="BMI Calculator" HorizontalAlignment="Left" Height="72" Margin="55,0,0,0" VerticalAlignment="Top" Width="406" FontSize="48" FontFamily="Segoe Script" Foreground="#FFD49B9B">
+        <Canvas x:Name="ColorCanvas" HorizontalAlignment="Left" Height="41" Margin="47.8,276,0,0" VerticalAlignment="Top" Width="76" Grid.Column="1"/>
+
+        <Label x:Name="label1" Grid.ColumnSpan="2" Content="BMI Calculator" HorizontalAlignment="Left" Height="72" Margin="55,0,0,0" VerticalAlignment="Top" Width="406" FontSize="48" FontFamily="Segoe Script" Foreground="#FFD49B9B" RenderTransformOrigin="0.497,0.492">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="7"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="label_Copy1" Content="lbs" HorizontalAlignment="Left" Height="69" Margin="123.4,63,0,0" VerticalAlignment="Top" Width="98" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.515,2.472" Foreground="#FFD4E2D6" Grid.Column="1">
+        <Label x:Name="label_Copy1" Content="lbs" HorizontalAlignment="Left" Height="69" Margin="119.8,53,0,0" VerticalAlignment="Top" Width="98" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.515,2.472" Foreground="#FFD4E2D6" Grid.Column="1">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="label_Copy2" Content="ft" HorizontalAlignment="Left" Height="69" Margin="123.4,122,0,0" VerticalAlignment="Top" Width="98" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.515,2.472" Foreground="#FFD4E2D6" Grid.Column="1">
+        <Label x:Name="label_Copy2" Content="in" HorizontalAlignment="Left" Height="69" Margin="123.8,111,0,0" VerticalAlignment="Top" Width="98" TextOptions.TextFormattingMode="Display" FontFamily="Segoe Print" FontSize="36" Opacity="1" RenderTransformOrigin="0.515,2.472" Foreground="#FFD4E2D6" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.291"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.289"/>
+                </TransformGroup>
+            </Label.RenderTransform>
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="label2" Content="Your BMI Rating" HorizontalAlignment="Left" Height="39" Margin="55,247,0,0" VerticalAlignment="Top" Width="183" FontFamily="Segoe Print" FontSize="18">
+        <Label x:Name="label2" Content="Your BMI Rating" HorizontalAlignment="Left" Height="39" Margin="109,232,0,0" VerticalAlignment="Top" Width="183" FontFamily="Segoe Print" FontSize="18" Grid.ColumnSpan="2">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="41" Margin="73,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" BorderThickness="5" BorderBrush="#FF5A6380">
-            <TextBox.Effect>
+        <TextBox x:Name="BMITextBox" HorizontalAlignment="Left" Height="41" Margin="126,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" BorderThickness="3" BorderBrush="#FF465580" FontSize="24" IsUndoEnabled="False" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label2_Copy" Content="Color Rating" HorizontalAlignment="Left" Height="39" Margin="32.8,232,0,0" VerticalAlignment="Top" Width="137" FontFamily="Segoe Print" FontSize="18" Grid.Column="1">
+            <Label.Effect>
                 <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
+            </Label.Effect>
+        </Label>
 
     </Grid>
 </Window>

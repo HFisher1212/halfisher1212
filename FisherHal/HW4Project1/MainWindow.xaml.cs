@@ -27,7 +27,30 @@ namespace HW4Project1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            int weight = 0;
+            int height = 0;
+            int bmi;
 
+            weight = Convert.ToInt16(WeightTextBox.Text);
+            height = Convert.ToInt16(HeightTextBox.Text);
+            weight = weight * 720;
+            height = height * height;
+            bmi = weight / height;
+            BMITextBox.Text = bmi + "";
+
+            if (bmi < 15)
+            {
+                ColorCanvas.Background = Brushes.Blue;
+            }
+            else if (bmi > 25)
+            {
+                ColorCanvas.Background = Brushes.Yellow;
+            }
+            else
+            {
+                ColorCanvas.Background = Brushes.Green;
+            }
+        
         }
     }
 }
