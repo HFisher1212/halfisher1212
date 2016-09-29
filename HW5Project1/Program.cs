@@ -52,7 +52,7 @@ namespace HW5Project1
             pyramidSize = Convert.ToInt16(Console.ReadLine());
             for (int row = 0; row <= pyramidSize; row++)
             {
-                for (int column = 0; column <= row; column++)
+                for (int column = 0; column <= row; column++) 
                 {
                     Console.Write('*');
                 }
