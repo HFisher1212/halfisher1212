@@ -1,0 +1,43 @@
+﻿<Window x:Class="Lec6Lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lec6Lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFC1D6A7"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="numeratorBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="76,86,0,0" BorderThickness="3">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="denominatorBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="330,86,0,0" BorderThickness="3">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <ListBox x:Name="operatorBox" HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="100" Margin="212,60,0,0" BorderThickness="3" Background="#FFA3DFCD" RenderTransformOrigin="0.5,0.5">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <Button x:Name="resultbutton" Content="Results" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="212,149,0,0" Height="38" Click="resultbutton_Click" BorderThickness="3">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" Margin="196,192,0,0" IsEnabled="False" BorderBrush="#FFB4B7BF" Background="White">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+
+    </Grid>
+</Window>
