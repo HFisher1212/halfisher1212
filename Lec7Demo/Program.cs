@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lec7Demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            public static Pizza PhoneOrder()
+            {
+            Size inputSize = Size.Large;
+
+            }
+        }
+    }
+}
