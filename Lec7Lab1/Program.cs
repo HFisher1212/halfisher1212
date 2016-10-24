@@ -29,16 +29,48 @@ namespace Lec7Lab1
                 Console.Write(" What is the students final exam score: ");
                 double final = Convert.ToDouble(Console.ReadLine());
                 student[i] = new Grades(midterm, score1, score2, score3, final);
+                Console.WriteLine();
             }
             ListGrades();
         }
 
         public static void ListGrades()
         {
+            int count = 1;
             for (int i = 0; i < student.Length; i++)
             {
-                Console.Write(student[i]);
-                String.Format("Final Total is: {1}",(student[i].GetMidterm() + student[i].GetFinal() + student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3()));
+                string peach;
+
+                Console.WriteLine("\n Student " + count );
+                Console.WriteLine(student[i]);
+                double total = (student[i].GetMidterm() * .35) + (student[i].GetFinal() * .40);
+                if (student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3() > 0)
+                {
+                    total += ( .834 * (student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3()) );
+                }
+                Console.WriteLine(String.Format("\n Final Total is: {0}", total));
+                if (total >= 90)
+                {
+                    peach = "A";
+                }
+                else if (total >= 80)
+                {
+                    peach = "A";
+                }
+                else if (total >= 70)
+                {
+                    peach = "C";
+                }
+                else if (total >= 60)
+                {
+                    peach = "D";
+                }
+                else
+                {
+                    peach = "F";
+                }
+                Console.Write(String.Format("\n Final Grade is: {0}", peach));
+                count++;
             }
             Console.ReadLine();
         }
