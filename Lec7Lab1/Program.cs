@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Project-     Lec7 Lab
+ * author-      Hal Fisher
+ * date-        10.24.2016
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,15 +25,15 @@ namespace Lec7Lab1
             for (int i = 0; i < size; i++)
             {
                 Console.Write(" What is the students quiz 1 score: ");
-                double score1 = Convert.ToDouble(Console.ReadLine());
+                int score1 = Convert.ToInt32(Console.ReadLine());
                 Console.Write(" What is the students quiz 2 score: ");
-                double score2 = Convert.ToDouble(Console.ReadLine());
+                int score2 = Convert.ToInt32(Console.ReadLine());
                 Console.Write(" What is the students quiz 3 score: ");
-                double score3 = Convert.ToDouble(Console.ReadLine());
+                int score3 = Convert.ToInt32(Console.ReadLine());
                 Console.Write(" What is the students midterm score: ");
-                double midterm = Convert.ToDouble(Console.ReadLine());
+                int midterm = Convert.ToInt32(Console.ReadLine());
                 Console.Write(" What is the students final exam score: ");
-                double final = Convert.ToDouble(Console.ReadLine());
+                int final = Convert.ToInt32(Console.ReadLine());
                 student[i] = new Grades(midterm, score1, score2, score3, final);
                 Console.WriteLine();
             }
@@ -43,12 +49,13 @@ namespace Lec7Lab1
 
                 Console.WriteLine("\n Student " + count );
                 Console.WriteLine(student[i]);
-                double total = (student[i].GetMidterm() * .35) + (student[i].GetFinal() * .40);
+                double total = ((student[i].GetMidterm() / 100) * .35) + ((student[i].GetFinal() / 100) * .40);
                 if (student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3() > 0)
                 {
-                    total += ( .834 * (student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3()) );
+                    total += (  ((student[i].GetQuiz1() + student[i].GetQuiz2() + student[i].GetQuiz3()) / 30) * .25 );
+                    total *= 100;
                 }
-                Console.WriteLine(String.Format("\n Final Total is: {0}", total));
+                Console.WriteLine(String.Format("\n Final Total is: {0}", total.ToString("##.##")));
                 if (total >= 90)
                 {
                     peach = "A";
