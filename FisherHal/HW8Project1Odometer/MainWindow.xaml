@@ -1,0 +1,60 @@
+﻿<Window x:Class="HW8Project1Odometer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1A5A5D" Offset="0"/>
+                <GradientStop Color="#FF53D0D7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border BorderBrush="#FF535569" BorderThickness="1" HorizontalAlignment="Left" Height="81" Margin="81,38,0,0" VerticalAlignment="Top" Width="396" IsEnabled="False">
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+        </Border>
+        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Height="31" Margin="95,74,0,0" VerticalAlignment="Top" Width="122" Click="update_Click" Background="#FF8CEED4" FontFamily="Trebuchet MS" FontSize="18">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="textBoxFuel" HorizontalAlignment="Left" TextAlignment="Right" Height="31" Margin="261,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64" BorderThickness="3" BorderBrush="#FF505B7F" Background="#FFF9F9FC" FontSize="18" FontFamily="Segoe UI Black" Cursor="Hand"/>
+        <TextBox x:Name="textBoxDriven" HorizontalAlignment="Left" TextAlignment="Right" Height="31" Margin="387,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" BorderThickness="3" BorderBrush="#FF535569" FontSize="18" FontFamily="Segoe UI Black"/>
+        <Label x:Name="labelFuel" Content="Add Fuel" HorizontalAlignment="Left" Height="31" Margin="249,43,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.879,0.517" FontFamily="Segoe Script" FontSize="18"/>
+        <Label x:Name="labelDriven" Content="Add Miles" HorizontalAlignment="Left" Height="31" Margin="365,43,0,0" VerticalAlignment="Top" Width="122" FontFamily="Segoe Script" FontSize="18"/>
+        <Button x:Name="buttonReset" Content="Reset Miles and Fuel" HorizontalAlignment="Left" Height="58" Margin="372,231,0,0" VerticalAlignment="Top" Width="122" Background="#FFC76B5C" Click="buttonReset_Click" BorderThickness="3" FontFamily="Trebuchet MS">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="buttonMPG" Content="Calc MPG" HorizontalAlignment="Left" Height="27" Margin="95,204,0,0" VerticalAlignment="Top" Width="122" Background="#FFAFCE86" Click="buttonMPG_Click" FontFamily="Trebuchet MS" FontSize="18">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="textBoxMPG" HorizontalAlignment="Left" TextAlignment="Right" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" Margin="261,204,0,0" BorderThickness="3" BorderBrush="#FF535969" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Label x:Name="label" Content="MPG" HorizontalAlignment="Left" Height="30" Margin="276,177,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="2.183,0.641" FontFamily="Segoe Script" FontSize="18"/>
+        <TextBox x:Name="textBoxTotalMiles" HorizontalAlignment="Left" TextAlignment="Right" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" Margin="393,150,0,0" BorderBrush="#FF535569" BorderThickness="3" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Label x:Name="label1" Content="Totals:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,143,0,0" Width="65" FontFamily="Segoe Script" FontSize="20" Panel.ZIndex="-1" Height="34" IsEnabled="False" Foreground="#FF0C0101"/>
+        <TextBox x:Name="textBoxTotalFuel" HorizontalAlignment="Left" TextAlignment="Right" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" Margin="265,150,0,0" BorderBrush="#FF535569" BorderThickness="3" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Label x:Name="label2" Content="Fuel" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.405,1.822" Margin="276,124,0,0" FontFamily="Segoe Script" FontSize="18"/>
+        <Label x:Name="label2_Copy" Content="Miles" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.405,1.822" Margin="393,124,0,0" FontFamily="Segoe Script" FontSize="18"/>
+        <Button x:Name="buttonToString" Content="Show ToString" HorizontalAlignment="Left" Height="31" Margin="95,258,0,0" VerticalAlignment="Top" Width="122" Click="buttonToString_Click" Background="#FF8FC9E2" FontFamily="Trebuchet MS" FontSize="18">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="textBoxToString" HorizontalAlignment="Left" Height="43" Margin="233,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" BorderThickness="3" BorderBrush="#FF535569"/>
+        <Label x:Name="label3" Content="M" HorizontalAlignment="Left" Margin="10,22,0,193.8" Width="80" FontSize="72" FontFamily="Segoe Script"/>
+        <Label x:Name="label3_Copy" Content="P" HorizontalAlignment="Left" Margin="10,102,0,113.8" Width="80" FontSize="72" FontFamily="Segoe Script"/>
+        <Label x:Name="label3_Copy1" Content="G" HorizontalAlignment="Left" Margin="10,175,0,40.8" Width="80" FontSize="72" FontFamily="Segoe Script"/>
+
+    </Grid>
+</Window>
