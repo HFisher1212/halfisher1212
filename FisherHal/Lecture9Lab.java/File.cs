@@ -18,6 +18,11 @@ namespace Lecture9Lab.java
         public File(string path, string text) : base(text)
         {
             PathName = path;
-        } 
+        }
+
+        public override string ToString()
+        {
+            return " " + PathName + " " + base.ToString();
+        }
     }
 }

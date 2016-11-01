@@ -22,7 +22,7 @@ namespace Lecture9Lab.java
 
         public override string ToString()
         {
-            return "Contents of document is: {0}, Text";
+            return " " + Text;
         }
     }
 }

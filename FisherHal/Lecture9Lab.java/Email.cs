@@ -16,7 +16,7 @@ namespace Lecture9Lab.java
         {
             Sender = "NoName@Here.com";
             Recipent = "SomeWhereElse@NotHere.com";
-            Title = "Blank Subject";
+            Title = "blank subject";
         }
 
         public Email(string sender, string recipent, string title, string text) : base(text)
@@ -24,6 +24,11 @@ namespace Lecture9Lab.java
             Sender = sender;
             Recipent = recipent;
             Title = title;
+        }
+
+        public override string ToString()
+        {
+            return " " + Sender + " " + Recipent + " " + Title + " " + Text;
         }
     }
 }
