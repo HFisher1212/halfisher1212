@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture9WalkThrough.java", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture9Lab.java", "Lecture9Lab.java\Lecture9Lab.java.csproj", "{B1C31628-24A8-4EE8-8AE3-E9310ABA5C60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW9Proj1Alien", "HW9Proj1Alien\HW9Proj1Alien.csproj", "{44AD92D0-B20B-4457-A0ED-0D312A329BE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B1C31628-24A8-4EE8-8AE3-E9310ABA5C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C31628-24A8-4EE8-8AE3-E9310ABA5C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C31628-24A8-4EE8-8AE3-E9310ABA5C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AD92D0-B20B-4457-A0ED-0D312A329BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AD92D0-B20B-4457-A0ED-0D312A329BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AD92D0-B20B-4457-A0ED-0D312A329BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AD92D0-B20B-4457-A0ED-0D312A329BE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
