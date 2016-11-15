@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW9Proj1Alien", "HW9Proj1Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec10Lab1", "PhoneBook\Lec10Lab1.csproj", "{1A5BCE22-E280-4D7E-8F3B-761C1784E4F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW10Proj1", "DuelDemo\HW10Proj1.csproj", "{6530F014-FEBC-4048-A8BE-9FEA8BDE7537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1A5BCE22-E280-4D7E-8F3B-761C1784E4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5BCE22-E280-4D7E-8F3B-761C1784E4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5BCE22-E280-4D7E-8F3B-761C1784E4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6530F014-FEBC-4048-A8BE-9FEA8BDE7537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6530F014-FEBC-4048-A8BE-9FEA8BDE7537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6530F014-FEBC-4048-A8BE-9FEA8BDE7537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6530F014-FEBC-4048-A8BE-9FEA8BDE7537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
