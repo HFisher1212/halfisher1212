@@ -1,0 +1,2 @@
+ Student Score Mean: 69
+ Student Score Median: 86.5
