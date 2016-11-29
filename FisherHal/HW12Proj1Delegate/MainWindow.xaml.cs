@@ -51,5 +51,12 @@ namespace HW12Proj1Delegate
         {
             textBox6.Text = shape.delegate();
         }
+
+        public double Square(int a, int b)
+        {
+            return a * b;
+        }
+
+        public delegate double ShapeDelegator(int a, int b);
     }
 }
