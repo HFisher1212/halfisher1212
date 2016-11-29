@@ -54,11 +54,51 @@ namespace Lecture13OperatorOverloading
             return !(v1 == v2);
         }
 
+        public double this[int index]
+        {
+            get
+            {
+                if(index == 0)
+                {
+                    return X;
+                }
+                else if (index == 1)
+                {
+                    return Y;
+                }
+                else if (index == 2)
+                {
+                    return Z;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+            set
+            {
+                if (index == 0)
+                {
+                    X = value;
+                }
+                else if (index == 1)
+                {
+                    Y = value;
+                }
+                else if (index == 2)
+                {
+                    Z = value;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+        }
+
         public override string ToString()
         {
             return String.Format("Vector: X={0}, Y={1}, Z={2}", X, Y, Z);
         }
-
-
     }
 }

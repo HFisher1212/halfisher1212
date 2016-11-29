@@ -41,6 +41,15 @@ namespace Lecture13OperatorOverloading
             Console.WriteLine("Vector result = {0}", result5);
             Console.WriteLine("Vector result = {0}", result6);
 
+            Console.WriteLine(a[0]);
+            Console.WriteLine(a[1]);
+            Console.WriteLine(a[2]);
+
+            a[1] = 3;
+            a[0] = 5;
+            a[2] = 8;
+            Console.WriteLine(a[0] + " " + a[1] + " " + a[2]);
+
 
             Console.ReadKey();
         }
