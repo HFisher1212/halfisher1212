@@ -10,7 +10,7 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFEA2A2A" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="Square" Content="Square" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="84,63,0,0" Click="Square_Click">
@@ -18,35 +18,25 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Circle" Content="Circle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="240,63,0,0" Click="Circle_Click">
+        <Button x:Name="Circle" Content="Circle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="84,98,0,0" Click="Circle_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Triangle" Content="Triangle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="376,60,0,0" Click="Triangle_Click">
+        <Button x:Name="Triangle" Content="Triangle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="84,131,0,0" Click="Triangle_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="85,90,0,0" BorderThickness="3"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="84,118,0,0" BorderThickness="3"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="     3.14" VerticalAlignment="Top" Width="75" Margin="240,118,0,0" BorderThickness="3" IsEnabled="False"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="240,90,0,0" BorderThickness="3"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="376,116,0,0" BorderThickness="3"/>
-        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="376,88,0,0" BorderThickness="3"/>
-        <Label x:Name="label" Content="Height" HorizontalAlignment="Left" Margin="30,87,0,0" VerticalAlignment="Top" Height="29" FontFamily="Segoe Print"/>
-        <Label x:Name="label_Copy" Content="Width" HorizontalAlignment="Left" Margin="33,113,0,0" VerticalAlignment="Top" Height="29" FontFamily="Segoe Print"/>
-        <Label x:Name="label_Copy1" Content="Diameter" HorizontalAlignment="Left" Margin="173,87,0,0" VerticalAlignment="Top" Height="29" FontFamily="Segoe Print"/>
-        <Label x:Name="label_Copy2" Content="pi" HorizontalAlignment="Left" Margin="208,113,0,0" VerticalAlignment="Top" Height="29" Width="32" FontFamily="Segoe Print"/>
-        <Label x:Name="label1" Content="Height" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325,84,0,0" Width="51" FontFamily="Segoe Print"/>
-        <Label x:Name="label1_Copy" Content="Base" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="334,114,0,0" Width="51" FontFamily="Segoe Print"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" Margin="210,98,0,0" BorderThickness="3"/>
+        <Label x:Name="label_Copy1" Content="Dimension" HorizontalAlignment="Left" Margin="210,69,0,0" VerticalAlignment="Top" Height="29" FontFamily="Segoe Print" Foreground="#FFE03434"/>
         <Button x:Name="button" Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="240,166,0,0" Click="button_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
         <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" Margin="240,190,0,0" IsEnabled="False" BorderThickness="3"/>
-        <Label x:Name="label2" Content="Radius" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="185,183,0,0" FontFamily="Segoe Print"/>
+        <Label x:Name="label2" Content="Radius" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="185,183,0,0" FontFamily="Segoe Print" Foreground="#FF180F0F" Background="{x:Null}"/>
 
     </Grid>
 </Window>
