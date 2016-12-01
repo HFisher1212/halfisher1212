@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW12Proj1Delegate", "HW12Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture13OperatorOverloading", "Lecture13OperatorOverloading\Lecture13OperatorOverloading.csproj", "{F275AF80-7D57-4683-A9AB-799C548F7D29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW13BMI", "HW13BMI\HW13BMI.csproj", "{36DFA746-4248-46EB-88CB-2F3008395EEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{F275AF80-7D57-4683-A9AB-799C548F7D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F275AF80-7D57-4683-A9AB-799C548F7D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F275AF80-7D57-4683-A9AB-799C548F7D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DFA746-4248-46EB-88CB-2F3008395EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DFA746-4248-46EB-88CB-2F3008395EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DFA746-4248-46EB-88CB-2F3008395EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DFA746-4248-46EB-88CB-2F3008395EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

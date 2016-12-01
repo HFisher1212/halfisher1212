@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HW12Proj1Delegate
 {
@@ -21,8 +20,7 @@ namespace HW12Proj1Delegate
     public partial class MainWindow : Window
     {
         ShapeDelegator delegator;
-        Shapes shape;
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -31,31 +29,28 @@ namespace HW12Proj1Delegate
 
         private void Square_Click(object sender, RoutedEventArgs e)
         {
-            shape = new Shapes(Convert.ToInt32(textBox), Convert.ToInt32(textBox1));
+        
             delegator = Square;
         }
 
         private void Circle_Click(object sender, RoutedEventArgs e)
         {
-            shape = new Shapes(Convert.ToInt32(textBox3), Convert.ToInt32(textBox2));
             delegator = Circle;
         }
 
         private void Triangle_Click(object sender, RoutedEventArgs e)
         {
-            shape = new Shapes(Convert.ToInt32(textBox4), Convert.ToInt32(textBox5));
             delegator = Triangle;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            textBox6.Text = shape.delegate();
+            
         }
 
-        public double Square(int a, int b)
-        {
-            return a * b;
-        }
+        private double Square(int a, int b)
+
+        
 
         public delegate double ShapeDelegator(int a, int b);
     }
