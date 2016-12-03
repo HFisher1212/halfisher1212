@@ -15,7 +15,7 @@ namespace FinalProject
 
             Console.WriteLine("Wecome to Bug Fight!");
             Console.WriteLine("Press Enter After Each Round.");
-            Console.WriteLine("To Restart Press 'r'. ");
+            Console.WriteLine("To Stop Press 's'. ");
             String temp = "";
             do
             {
@@ -43,7 +43,7 @@ namespace FinalProject
                 }
                 temp = Console.ReadLine();
 
-            } while (!temp.Equals("r"));
+            } while (!temp.Equals("s"));
         }
     }
 }

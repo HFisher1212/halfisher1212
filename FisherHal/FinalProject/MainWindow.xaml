@@ -59,7 +59,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="label4" Content="Press 'r' to Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,251,0,0" Height="26" Width="100" Foreground="#FFC37D7D"/>
+        <Label x:Name="label4" Content="Press 's' to Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,251,0,0" Height="26" Width="100" Foreground="#FFC37D7D"/>
         <Label x:Name="label5" Content="No More Than 100 Ants and 15 Doodlebugs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,269,0,0" Foreground="#FFCD8686"/>
         <Label x:Name="label6" Content="Set Fight Screen to Width 85, Height 22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,287,0,0" Width="222" Foreground="#FFD68B8B"/>
 

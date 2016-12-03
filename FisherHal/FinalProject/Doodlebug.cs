@@ -29,7 +29,7 @@ namespace FinalProject
             // Set isAlive on doodlebugs = true
             for (int x = 6; x < 7; x++)
             {
-                for (int y = 5; y < doodlebugCount - 5; y++)
+                for (int y = 5; y < doodlebugCount - 4; y++)
                 {
                     doodlebug[x, y].IsAlive = true;
                 }

@@ -87,11 +87,99 @@ namespace FinalProject
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Organism.dbBreedCount = Convert.ToInt32(textBox_Copy1.Text);
-            Organism.dbLifeSpan = Convert.ToInt32(textBox_Copy.Text);
-            Organism.doodlebugCount = 10 + Convert.ToInt32(textBox.Text);
-            Organism.antCount = Convert.ToInt16(textBox1.Text);
-            Controller.Control();
+            int check = 0;
+            bool test = true;
+
+            if (test)
+            {
+                try
+                {
+                    check = Convert.ToInt32(textBox_Copy1.Text);
+                    if (check < 1 || check > 8)
+                    {
+                        throw new FormatException();
+                    }
+                    else
+                    {
+                        Organism.dbBreedCount = check;
+                        test = true;
+                    }
+                }
+                catch (FormatException)
+                {
+                    test = false;
+                    MessageBox.Show(" ERROR: Breed Interval Must be Between 1 and 8");
+                }
+            }
+                
+            if (test)
+            {
+                try
+                {
+                    check = Convert.ToInt32(textBox_Copy.Text);
+                    if (check < 1 || check > 8)
+                    {
+                        throw new FormatException();
+                    }
+                    else
+                    {
+                        Organism.dbLifeSpan = check;
+                        test = true;
+                    }
+                }
+                catch (FormatException)
+                {
+                    test = false;
+                    MessageBox.Show(" ERROR: Life Span Must be Between 1 and 8.");
+                }
+            }
+
+            if(test)
+            {
+                try
+                {
+                    check = Convert.ToInt32(textBox.Text);
+                    if (check < 3 || check > 15)
+                    {
+                        throw new FormatException();
+                    }
+                    else
+                    {
+                        Organism.doodlebugCount = 9 + check;
+                        test = true;
+                    }
+                }
+                catch (FormatException)
+                {
+                    test = false;
+                    MessageBox.Show(" ERROR: Doodlebug Count Must be Between 3 and 15.");
+                }
+            }
+            if(test)
+            { 
+                try
+                {
+                    check = Convert.ToInt32(textBox1.Text);
+                    if (check < 30 || check > 100)
+                    {
+                        throw new FormatException();
+                    }
+                    else
+                    {
+                        Organism.antCount = check;
+                        test = true;
+                    }
+                }
+                catch (FormatException)
+                {
+                    test = false;
+                    MessageBox.Show(" ERROR: Ant Count Must be Between 30 and 100.");
+                }
+            }
+            if (test)
+            {
+                Controller.Control();
+            }
         }
     }
 }
