@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW13BMI", "HW13BMI\HW13BMI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject", "FinalProject\FinalProject.csproj", "{C01BBE0E-0D7A-4251-A8F9-E8EF0BE8A66F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GolfApp", "GolfApp\GolfApp.csproj", "{7CFA9A3A-9CB9-45EF-B44A-337AD3547F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW14Log4Net", "HW14Log4Net\HW14Log4Net.csproj", "{615603A9-E3BB-41EC-A294-20A675BE9F2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{C01BBE0E-0D7A-4251-A8F9-E8EF0BE8A66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C01BBE0E-0D7A-4251-A8F9-E8EF0BE8A66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C01BBE0E-0D7A-4251-A8F9-E8EF0BE8A66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFA9A3A-9CB9-45EF-B44A-337AD3547F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFA9A3A-9CB9-45EF-B44A-337AD3547F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFA9A3A-9CB9-45EF-B44A-337AD3547F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFA9A3A-9CB9-45EF-B44A-337AD3547F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615603A9-E3BB-41EC-A294-20A675BE9F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615603A9-E3BB-41EC-A294-20A675BE9F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615603A9-E3BB-41EC-A294-20A675BE9F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615603A9-E3BB-41EC-A294-20A675BE9F2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
