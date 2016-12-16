@@ -13,7 +13,7 @@ namespace FinalProject
             Doodlebug.populateDoodlebug();
             Ant.populateAnt();
 
-            Console.WriteLine("Wecome to Bug Fight!");
+            Console.WriteLine("Welcome to Bug Fight!");
             Console.WriteLine("Press Enter After Each Round.");
             Console.WriteLine("To Stop Press 's'. ");
             String temp = "";

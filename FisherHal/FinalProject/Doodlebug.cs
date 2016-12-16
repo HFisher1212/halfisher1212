@@ -12,7 +12,7 @@ namespace FinalProject
 
         // Default Constructor
         public Doodlebug() : base()
-        {  }
+        { }
 
         // METHODS SECTION
 
@@ -76,173 +76,118 @@ namespace FinalProject
                                     // Set doodlebug to isAlive and kill ant (set isAlive to false) set new location to doodlebug isAlive true and moved to true
                                     if (doodlebug[i, x].BreedCount >= dbBreedCount)
                                     {
-                                        ant[i, x + 1].IsAlive = false;
-                                        doodlebug[i, x + 1].IsAlive = true;
-                                        doodlebug[i, x + 1].Moved = true;
-                                        doodlebug[i, x + 1].StepCount = 0;
+                                        moveHunt(i, (x + 1));
                                         doodlebug[i, x + 1].BreedCount = 0;
                                         doodlebug[i, x].Moved = true;
-                                        doodlebug[i, x].StepCount = 0;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        updateCount(i, x);
                                     }
                                     else
                                     {
-                                        // 
-                                        ant[i, x + 1].IsAlive = false;
-                                        doodlebug[i, x + 1].IsAlive = true;
-                                        doodlebug[i, x + 1].Moved = true;
-                                        doodlebug[i, x + 1].StepCount = 0;
-                                        doodlebug[i, x].IsAlive = false;
-                                        doodlebug[i, x].StepCount = 0;
+                                        moveHunt(i, (x + 1));
                                         doodlebug[i, x + 1].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        doodlebug[i, x].IsAlive = false;
+                                        updateCount(i, x);
                                     }
                                 }
                                 else if (x - 1 >= 0 && ant[i, x - 1].IsAlive) // && !doodlebug[i][x].getMoved())
                                 {
                                     if (doodlebug[i, x].BreedCount >= dbBreedCount)
                                     {
-                                        ant[i, x - 1].IsAlive = false;
-                                        doodlebug[i, x - 1].IsAlive = true;
-                                        doodlebug[i, x - 1].Moved = true;
-                                        doodlebug[i, x - 1].StepCount = 0;
+                                        moveHunt(i, (x - 1));
                                         doodlebug[i, x - 1].BreedCount = 0;
                                         doodlebug[i, x].Moved = true;
-                                        doodlebug[i, x].StepCount = 0;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        updateCount(i, x);
                                     }
                                     else
                                     {
-                                        ant[i, x - 1].IsAlive = false;
-                                        doodlebug[i, x - 1].IsAlive = true;
-                                        doodlebug[i, x - 1].Moved = true;
-                                        doodlebug[i, x - 1].StepCount = 0;
-                                        doodlebug[i, x].IsAlive = false;
-                                        doodlebug[i, x].StepCount = 0;
+                                        moveHunt(i, (x - 1));
                                         doodlebug[i, x - 1].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        doodlebug[i, x].IsAlive = false;
+                                        updateCount(i, x);
                                     }
                                 }
                                 else if (i - 1 >= 0 && ant[i - 1, x].IsAlive) //&& !doodlebug[i][x].getMoved())
                                 {
+
                                     if (doodlebug[i, x].BreedCount >= dbBreedCount)
                                     {
-                                        ant[i - 1, x].IsAlive = false;
-                                        doodlebug[i - 1, x].IsAlive = true;
-                                        doodlebug[i - 1, x].Moved = true;
-                                        doodlebug[i - 1, x].StepCount= 0;
+                                        moveHunt2((i - 1), x);
                                         doodlebug[i - 1, x].BreedCount = 0;
                                         doodlebug[i, x].Moved = true;
-                                        doodlebug[i, x].StepCount = 0;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        updateCount(i, x);
                                     }
                                     else
                                     {
-                                        ant[i - 1, x].IsAlive = false;
-                                        doodlebug[i - 1, x].IsAlive = true;
-                                        doodlebug[i - 1, x].Moved = true;
-                                        doodlebug[i - 1, x].StepCount = 0;
-                                        doodlebug[i, x].IsAlive = false;
-                                        doodlebug[i, x].StepCount = 0;
+                                        moveHunt2((i - 1), x);
                                         doodlebug[i - 1, x].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        doodlebug[i, x].IsAlive = false;
+                                        updateCount(i, x);
                                     }
                                 }
                                 else if (i + 1 < 20 && ant[i + 1, x].IsAlive) //&& !doodlebug[i][x].getMoved())
                                 {
                                     if (doodlebug[i, x].BreedCount >= dbBreedCount)
                                     {
-                                        ant[i + 1, x].IsAlive = false;
-                                        doodlebug[i + 1, x].IsAlive = true;
-                                        doodlebug[i + 1, x].Moved = true;
-                                        doodlebug[i + 1, x].StepCount = 0;
+                                        moveHunt2((i + 1), x);
                                         doodlebug[i + 1, x].BreedCount = 0;
                                         doodlebug[i, x].Moved = true;
-                                        doodlebug[i, x].StepCount = 0;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        updateCount(i, x);
                                     }
                                     else
                                     {
-                                        ant[i + 1, x].IsAlive = false;
-                                        doodlebug[i + 1, x].IsAlive = true;
-                                        doodlebug[i + 1, x].Moved = true;
-                                        doodlebug[i + 1, x].StepCount = 0;
-                                        doodlebug[i, x].IsAlive = false;
-                                        doodlebug[i, x].StepCount = 0;
+                                        moveHunt2((i + 1), x);
                                         doodlebug[i + 1, x].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                        doodlebug[i, x].BreedCount = 0;
+                                        doodlebug[i, x].IsAlive = false;
+                                        updateCount(i, x);
                                     }
                                 }
                                 else
                                 {
                                     int moveDir;
-                                    moveDir = random.Next(8);
+                                    moveDir = random.Next(4);
+
                                     switch (moveDir)
                                     {
                                         case 0:
                                             if (x + 1 < 20 && !doodlebug[i, x + 1].IsAlive)
                                             {
-                                                doodlebug[i, x + 1].IsAlive = true;
-                                                doodlebug[i, x + 1].Moved = true;
-                                                doodlebug[i, x].IsAlive = false;
-                                                doodlebug[i, x + 1].StepCount = (doodlebug[i, x].StepCount + 1);
-                                                doodlebug[i, x + 1].BreedCount = (doodlebug[i, x].BreedCount + 1);
-                                                doodlebug[i, x].BreedCount = 0;
-                                                doodlebug[i, x].StepCount = 0;
+                                                doodleMoveX(i, (x + 1), x);
                                                 break;
                                             }
                                             else
                                             {
-                                                moveDir = random.Next(3) + 1;
+                                                Move(i, x);
                                                 break;
                                             }
 
                                         case 1:
                                             if (x - 1 > 0 && !doodlebug[i, x - 1].IsAlive)
                                             {
-                                                doodlebug[i, x - 1].IsAlive = true;
-                                                doodlebug[i, x - 1].Moved = true;
-                                                doodlebug[i, x].IsAlive = false;
-                                                doodlebug[i, x - 1].StepCount = doodlebug[i, x].StepCount + 1;
-                                                doodlebug[i, x - 1].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                                doodlebug[i, x].BreedCount = 0;
-                                                doodlebug[i, x].StepCount = 0;
+                                                doodleMoveX(i, (x - 1), x);
                                                 break;
                                             }
                                             else
                                             {
-                                                moveDir = random.Next(4);
+                                                Move(i, x);
                                                 break;
                                             }
 
                                         case 2:
                                             if (i - 1 > 0 && !doodlebug[i - 1, x].IsAlive)
                                             {
-                                                doodlebug[i, x].IsAlive = false;
-                                                doodlebug[i - 1, x].IsAlive = true;
-                                                doodlebug[i - 1, x].Moved = true;
-                                                doodlebug[i - 1, x].StepCount = doodlebug[i, x].StepCount + 1;
-                                                doodlebug[i - 1, x].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                                doodlebug[i, x].BreedCount = 0;
-                                                doodlebug[i, x].StepCount = 0;
+                                                doodleMoveI(i, (i - 1), x);
                                                 break;
                                             }
                                             else
                                             {
-                                                moveDir = random.Next(4);
+                                                Move(i, x);
                                                 break;
                                             }
 
                                         case 3:
                                             if (i + 1 < 20 && !doodlebug[i + 1, x].IsAlive)
                                             {
-                                                doodlebug[i + 1, x].IsAlive = true;
-                                                doodlebug[i + 1, x].Moved = true;
-                                                doodlebug[i, x].IsAlive = false;
-                                                doodlebug[i + 1, x].StepCount = doodlebug[i, x].StepCount + 1;
-                                                doodlebug[i + 1, x].BreedCount = doodlebug[i, x].BreedCount + 1;
-                                                doodlebug[i, x].BreedCount = 0;
-                                                doodlebug[i, x].StepCount = 0;
+                                                doodleMoveI(i, (i + 1), x);
                                                 break;
                                             }
                                             else
@@ -256,6 +201,68 @@ namespace FinalProject
                         }
                     }
                 }
+            }
+        }
+
+        public static void moveHunt(int i, int x)
+        {
+            ant[i, x].IsAlive = false;
+            doodlebug[i, x].IsAlive = true;
+            doodlebug[i, x].Moved = true;
+            doodlebug[i, x].StepCount = 0;
+        }
+
+        public static void moveHunt2(int i, int x)
+        {
+            ant[i, x].IsAlive = false;
+            doodlebug[i, x].IsAlive = true;
+            doodlebug[i, x].Moved = true;
+            doodlebug[i, x].StepCount = 0;
+        }
+
+        public static void updateCount(int i, int x)
+        {
+            doodlebug[i, x].BreedCount = 0;
+            doodlebug[i, x].StepCount = 0;
+        }
+
+        public static void doodleMoveX(int i, int xx, int x)
+        {
+            doodlebug[i, x].IsAlive = false;
+            doodlebug[i, xx].IsAlive = true;
+            doodlebug[i, xx].Moved = true;
+            doodlebug[i, xx].StepCount = doodlebug[i, x].StepCount + 1;
+            doodlebug[i, xx].BreedCount = doodlebug[i, x].BreedCount + 1;
+            updateCount(i, x);
+        }
+
+        public static void doodleMoveI(int i, int ii, int x)
+        {
+            doodlebug[i, x].IsAlive = false;
+            doodlebug[ii, x].IsAlive = true;
+            doodlebug[ii, x].Moved = true;
+            doodlebug[ii, x].StepCount = doodlebug[i, x].StepCount + 1;
+            doodlebug[ii, x].BreedCount = doodlebug[i, x].BreedCount + 1;
+            updateCount(i, x);
+        }
+
+        public static void Move(int i, int x)
+        {
+            if (x + 1 < 20 && !doodlebug[i, x + 1].IsAlive)
+            {
+                doodleMoveX(i, (x + 1), x);
+            }
+            else if (x - 1 > 0 && !doodlebug[i, x - 1].IsAlive)
+            {
+                doodleMoveX(i, (x - 1), x);
+            }
+            else if (i - 1 > 0 && !doodlebug[i - 1, x].IsAlive)
+            {
+                doodleMoveI(i, (i - 1), x);
+            }
+            else if (i + 1 < 20 && !doodlebug[i + 1, x].IsAlive)
+            {
+                doodleMoveI(i, (i + 1), x);
             }
         }
     }
