@@ -1,0 +1,40 @@
+﻿<Window x:Class="HorseRaceSim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorseRaceSim"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="643.425" Width="429.4">
+    <Grid Margin="0,0,-5.8,0.6" HorizontalAlignment="Left" Width="413">
+        <Grid.Background>
+            <ImageBrush ImageSource="Horserace3.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="132" Margin="142,83,0,0" RenderTransformOrigin="-1.308,-0.507" Background="#FFFFFDFD" BorderThickness="3" BorderBrush="#FFD2DBF9"/>
+        <RadioButton x:Name="radioButton" Content="Win" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,133,0,0" FontFamily="Segoe Print" Foreground="#FF6CCD58" Opacity="1" Visibility="Visible" FontWeight="Bold" IsChecked="True"/>
+        <RadioButton x:Name="radioButton1"  Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,153,0,0" Foreground="#FF6CCD58" FontWeight="Bold" FontFamily="Segoe Print"/>
+        <RadioButton x:Name="radioButton2"  Content="Show" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,178,0,0" Foreground="#FF6CCD58" Visibility="Visible" Opacity="1" FontWeight="Bold" FontFamily="Segoe Print"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="69" Margin="77,276,0,0" Background="{x:Null}" BorderBrush="#FFACBDED" BorderThickness="2"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" TextAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65" Margin="165,276,0,0" IsEnabled="False" BorderBrush="#FF6485EA" Background="#FFDAD1D1" BorderThickness="2"/>
+        <Button x:Name="button" Content="Bet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="258,276,0,0" Height="23" FontFamily="Segoe Script" FontWeight="Bold" BorderThickness="1" Foreground="#FFE23505" Background="#FF689D3B" BorderBrush="#FF33661C" Click="button_Click_1">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="2"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label" Content=" Welcome to Del Mar Race Track" HorizontalAlignment="Left" Margin="53,19,0,0" VerticalAlignment="Top" Width="284" FontSize="16" FontFamily="Segoe Print" FontWeight="Bold" Background="Black" Foreground="#FFE54418"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="162,317,0,0" Background="#FF49ACD7" Click="button1_Click_1">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="2"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label1" Content="Horses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="142,57,0,0" FontFamily="Segoe Script" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="#FFD68945"/>
+        <Border BorderBrush="#FFC3CEEB" BorderThickness="3" HorizontalAlignment="Left" Height="48" Margin="64,264,0,0" VerticalAlignment="Top" Width="267" CornerRadius="3"/>
+        <Label x:Name="label2" Content="Wager" HorizontalAlignment="Left" Height="31" Margin="77,239,0,0" VerticalAlignment="Top" Width="52" FontFamily="Segoe Print" Foreground="#FFD68945" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="Total" HorizontalAlignment="Left" Height="28" Margin="165,239,0,0" VerticalAlignment="Top" Width="50" FontFamily="Segoe Print" Foreground="#FFD68945" FontWeight="Bold"/>
+        <Border BorderBrush="#FFC3CEEB" BorderThickness="2" HorizontalAlignment="Left" Height="78" Margin="57,125,0,0" VerticalAlignment="Top" Width="72" CornerRadius="3"/>
+        <Label x:Name="label4" Content="Wager Type" HorizontalAlignment="Left" Height="29" Margin="53,99,0,0" VerticalAlignment="Top" Width="84" FontFamily="Segoe Print" FontWeight="Bold" Foreground="#FFD68945"/>
+        <ListBox x:Name="listBox_Odds" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="52" Margin="279,83,0,0" RenderTransformOrigin="-1.308,-0.507" Background="#FFFFFDFD" BorderThickness="3" BorderBrush="#FFD2DBF9" IsEnabled="False"/>
+        <Label x:Name="label1_Copy" Content="Odds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="274,57,0,0" FontFamily="Segoe Script" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="#FFD68945"/>
+
+    </Grid>
+</Window>
